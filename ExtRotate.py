@@ -1,11 +1,14 @@
 import bpy
 
 bl_info = {
-    "name": "Extrude and Rotate",
+    "name" : "ExtRotate",
+    "author" : "Mosrod",
     "description" : "Lets you extrude and rotate a face",
-    "category": "Mesh",
+    "blender" : (2, 80, 0),
+    "version" : (0, 0, 2),
     "location" : "View3D",
-    "blender" : (2, 80, 0)
+    "warning" : "",
+    "category" : "Mesh"
 }
 class ExtrudeRotate(bpy.types.Operator):
     """Extrude and Rotate Face"""      # Use this as a tooltip for menu items and buttons.
