@@ -3,17 +3,17 @@ import bpy
 bl_info = {
     "name" : "ExtRotate",
     "author" : "Mosrod",
-    "description" : "Lets you extrude and rotate a face",
+    "description" : "Tool for extruding, rotating, and scaling faces",
     "blender" : (2, 80, 0),
-    "version" : (0, 0, 3),
+    "version" : (0, 0, 4),
     "location" : "View3D",
     "warning" : "",
     "category" : "Mesh"
 }
 class ExtrudeRotate(bpy.types.Operator):
-    """Extrude and Rotate Face"""      # Use this as a tooltip for menu items and buttons.
-    bl_idname = "mesh.extrude_rotate"        # Unique identifier for buttons and menu items to reference.
-    bl_label = "Extrude and Rotate Face"         # Display name in the interface.
+    """ExtRotate"""      # Use this as a tooltip for menu items and buttons.
+    bl_idname = "mesh.extrotate"        # Unique identifier for buttons and menu items to reference.
+    bl_label = "ExtRotate"         # Display name in the interface.
     bl_options = {'REGISTER', 'UNDO'}  # Enable undo for the operator.
     
     extrudevalue: bpy.props.FloatProperty(name="Extrude Amount", default=-0.1, min=-100, max=100)
