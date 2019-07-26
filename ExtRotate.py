@@ -5,7 +5,7 @@ bl_info = {
     "author" : "Mosrod",
     "description" : "Lets you extrude and rotate a face",
     "blender" : (2, 80, 0),
-    "version" : (0, 0, 2),
+    "version" : (0, 0, 3),
     "location" : "View3D",
     "warning" : "",
     "category" : "Mesh"
